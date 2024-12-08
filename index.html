@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="left-nav">
+                <a href="#">Converter</a>
+                <a href="#">Send money</a>
+            </div>
+            <div class="right-nav">
+                <a href="#">Sign in</a>
+                <a href="#">Register</a>
+            </div>
+        </div>
+        <div class="converter-container">
+            <div class="first-line">
+                <div class="usd-input">
+                    <label for="USD-amount">$
+                        <input type="text" id="USD-amount" value="1000">
+                    </label>
+                </div>
+                <div class="currencies-display">
+                    <div class="USD-currency">
+                        <span>USD - US Dollar</span>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 17" aria-hidden="true" class="h-4 w-4 rotate-90 text-greyblue-400 md:rotate-0"><path fill="currentColor" fill-rule="evenodd" d="M11.726 1.273l2.387 2.394H.667V5h13.446l-2.386 2.393.94.94 4-4-4-4-.94.94zM.666 12.333l4 4 .94-.94L3.22 13h13.447v-1.333H3.22l2.386-2.394-.94-.94-4 4z" clip-rule="evenodd" data-darkreader-inline-fill="" style="--darkreader-inline-fill: currentColor;"></path></svg>
+                    <div class="RUB-currency">
+                        <select name="" id="to">
+                            <option value="RUB">RUB - Russian Ruble</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="displayed-result">
+                <span class="ending-value"></span>
+                <span>1 USD = 100 RUB</span>
+                <span>1 RUB = 0.00994566 USD</span>
+            </div>
+            <button id="convert">Convert your currency to RUB</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

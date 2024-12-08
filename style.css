@@ -1,0 +1,101 @@
+body, html {
+    background-color: rgb(17, 18, 19);    
+    overflow: hidden;
+    font-family: sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+#USD-amount {
+    border:none;
+    outline:none;
+}
+label[for="USD-amount"] {
+    border:solid 1px #d5d5d5;
+    padding: 0 0 0 5px;
+    border-radius: 15px;
+}
+.navbar {
+    display: flex;
+    position: relative;
+    width: 100%;
+    text-decoration: none;
+    padding: 1em 0;
+    margin-bottom: 1em;
+}
+.navbar a {
+    display: inline-flex;
+    text-decoration: none;
+    color: #b7b6d4;
+    padding-left: 0.5rem;
+}
+.right-nav {
+    position: absolute;
+    right: 0;
+}
+.container .converter-container {
+    margin: 0 auto;
+    height: 90vh;
+    width: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.currencies-display {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.USD-currency {
+    border: 2px solid white;
+    padding: 3vh 0;
+    display: flex;
+    align-items: flex-start;
+    color: white;
+    border-radius: 15px;
+}
+.RUB-currency {
+    border: 2px solid white;
+    padding: 1em 0 1em 0;
+    color: white;
+}
+svg {
+    size: 1000px;
+    width: 60px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 20px;
+    color: lightblue
+}
+.first-line {
+    display: flex;
+    align-items: center;
+}
+.displayed-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: inherit;
+    padding-left: 5px;
+    color: white;
+}
+.usd-input {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+label[for="USD-amount"], input {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: rgb(17, 18, 19);
+}
+label {
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+}
